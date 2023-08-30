@@ -3,26 +3,26 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Gestion des utilisateurs</title>
+        <title>Gestion des prestataires de services</title>
     </head>
     <body>
-        <h1>Gestion des Utilisateurs</h1>
+        <h1>Gestion des prestataires de services</h1>
         <!--
             voici les éléments essentiels qu'on peut avoir : 
-            - Voir la listes des utilisateurs enrégistrés
-            - Ajouter de nouveaux utilisateurs
-            - Modifier les informations des utilisateurs existants
-            - Supprimer des utilisateurs
+            - Voir la listes des prestataires de services enrégistrés
+            - Ajouter de nouveaux perestataires
+            - Modifier les informations des prestataires existants
+            - Supprimer des prestataires
         -->
-        <h2>Liste des utilisateurs</h2>
+        <h2>Liste des prestataires</h2>
         <ul id="Users-list">
             <!--
-                Les utilisateurs seront ajoutés ici de façon dynamique
+                Les prestataires seront ajoutés ici de façon dynamique
             -->
             </script>
         </ul>
 
-        <h2>Créer un compte utilisateur</h2>
+        <h2>Créer un compte prestataire</h2>
         <form action="creation" method="post">
 
             <label for="firstname">Prénom : </label>
@@ -43,7 +43,7 @@
             <input type="submit" value="Créer compte">
         </form>
 
-        <h2>Modifier un compte utilisateur</h2>
+        <h2>Modifier un compte prestataire</h2>
         <form action="mise_à_jour" method="post">
 
             <label for="firstname">Prénom : </label>
@@ -64,7 +64,7 @@
             <input type="submit" value="Modifier compte">            
         </form>
 
-        <h2>Supprimer un compte utilisateur</h2>
+        <h2>Supprimer un compte prestataire</h2>
         <form action="supprimer" method="post">
 
             <label for="firstname">Prénom : </label>
