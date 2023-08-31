@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tableau de Bord Administratif - Gestion des Réservations</title>
+</head>
+<body>
+    <h1>Gestion des Réservations</h1>
+    
+    <!-- Formulaire pour créer une nouvelle réservation -->
+    <h2>Créer une nouvelle réservation</h2>
+    <form action="backend_creer_reservation.php" method="post">
+        <label for="user">Utilisateur :</label>
+        <select id="user" name="user" required>
+            <option value="utilisateur1">Utilisateur 1</option>
+            <option value="utilisateur2">Utilisateur 2</option>
+            <!-- Ajouter d'autres options d'utilisateurs -->
+        </select><br>
+        <label for="date">Date :</label>
+        <input type="date" id="date" name="date" required><br>
+        <input type="submit" value="Créer réservation">
+    </form>
+    
+    <!-- Liste des réservations existantes avec des options de gestion -->
+    <h2>Liste des réservations</h2>
+    <table>
+        <tr>
+            <th>Utilisateur</th>
+            <th>Date</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>Utilisateur 1</td>
+            <td>2023-08-29</td>
+            <td><a href="modifier_reservation.php?id=1">Modifier</a> | <a href="supprimer_reservation.php?id=1">Supprimer</a></td>
+        </tr>
+        <!-- Répéter pour chaque réservation -->
+    </table>
+</body>
+</html>
+
+
+
+
+
