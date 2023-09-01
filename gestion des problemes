@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>tableau de bord  gestion des problèmes</title>
+    <meta charset="utf-8">
+</head>
+<!-- ... Affichage du tableau de bord et section probleme -->
+<body>
+    <div class="section">
+    <h2>Gestion des Problemes</h2>
+    
+    <!-- Formulaire pour signaler un nouveau problème -->
+    <h2>Signaler un nouveau problème</h2>
+    <form action="backend_signaler_probleme.php" method="post">
+        <label for="user">Utilisateur :</label>
+        <input type="text" id="user" name="user" required><br>
+        <label for="description">Description du problème :</label><br>
+        <textarea id="description" name="description" rows="4" cols="50" required></textarea><br>
+        <input type="submit" value="Signaler problème">
+    </form>
+    
+    <!-- Liste des problèmes signalés avec des options de gestion -->
+    <h2>Liste des problèmes signalés</h2>
+    <table border="1">
+        <tr>
+            <th>Utilisateur</th>
+            <th>Description</th>
+            <th>Action</th>
+        </tr>
+     </table>
+</body>
+</html>
