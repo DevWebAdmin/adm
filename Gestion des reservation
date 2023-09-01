@@ -1,44 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Tableau de Bord Administratif - Gestion des Réservations</title>
+    <title>tableau de bord</title>
+    <meta charset="utf-8">
 </head>
+<!-- ... Affichage du tableau de bord et autres sections -->
 <body>
-    <h1>Gestion des Réservations</h1>
+<div class="section">
+    <h2>Gestion des Réservations</h2>
     
-    <!-- Formulaire pour créer une nouvelle réservation -->
-    <h2>Créer une nouvelle réservation</h2>
-    <form action="backend_creer_reservation.php" method="post">
-        <label for="user">Utilisateur :</label>
-        <select id="user" name="user" required>
-            <option value="utilisateur1">Utilisateur 1</option>
-            <option value="utilisateur2">Utilisateur 2</option>
-            <!-- Ajouter d'autres options d'utilisateurs -->
-        </select><br>
-        <label for="date">Date :</label>
-        <input type="date" id="date" name="date" required><br>
-        <input type="submit" value="Créer réservation">
+    <!-- Formulaire d'ajout de réservation -->
+    <form method="post">
+        <label for="user">Utilisateur:</label>
+        <input type="text" name="user" required>
+        <hr/>
+        <label for="provider">Prestataire:</label>
+        <input type="text" name="provider" required>
+        <hr/>
+        <label for="date">Date:</label>
+        <input type="date" name="date" required>
+        <hr/>
+        <button type="submit">Ajouter Réservation</button>
     </form>
-    
-    <!-- Liste des réservations existantes avec des options de gestion -->
+    <hr/>
+    <!-- Liste des réservations existantes -->
     <h2>Liste des réservations</h2>
-    <table>
+    <table border="1">
         <tr>
             <th>Utilisateur</th>
+            <th>Prestataire</th>
             <th>Date</th>
             <th>Action</th>
         </tr>
-        <tr>
-            <td>Utilisateur 1</td>
-            <td>2023-08-29</td>
-            <td><a href="modifier_reservation.php?id=1">Modifier</a> | <a href="supprimer_reservation.php?id=1">Supprimer</a></td>
-        </tr>
-        <!-- Répéter pour chaque réservation -->
-    </table>
-</body>
-</html>
-
-
-
-
+    </body>
+ </html>
 
