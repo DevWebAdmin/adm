@@ -13,16 +13,16 @@
     <form method="post">
         <label for="user">Utilisateur:</label>
         <input type="text" name="user" required>
-        <hr/>
+        <br><br>
         <label for="provider">Prestataire:</label>
         <input type="text" name="provider" required>
-        <hr/>
+        <br><br>
         <label for="date">Date:</label>
         <input type="date" name="date" required>
-        <hr/>
+        <br><br>
         <button type="submit">Ajouter Réservation</button>
     </form>
-    <hr/>
+    <br><br>
     <!-- Liste des réservations existantes -->
     <h2>Liste des réservations</h2>
     <table border="1">
